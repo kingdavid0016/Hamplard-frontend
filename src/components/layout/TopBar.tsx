@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState, type FormEvent } from 'react';
 import {
   Bell, ChevronDown, Menu, Search, ShoppingCart, UserCircle2, X,
 } from 'lucide-react';
@@ -34,7 +34,7 @@ export function TopBar() {
     return 'H';
   }, [address, user?.name]);
 
-  const handleSearch = (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSearch = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     // Hook point for search route integration.
   };
@@ -110,7 +110,7 @@ export function TopBar() {
               <Link href="/auth/login" className="rounded-lg px-4 py-2 text-sm font-medium text-white hover:bg-[#3C3489]">
                 Login
               </Link>
-              <Link href="/auth/login" className="rounded-lg bg-[#7F77DD] px-4 py-2 text-sm font-semibold text-white hover:bg-[#3C3489]">
+              <Link href="/auth/signup" className="rounded-lg bg-[#7F77DD] px-4 py-2 text-sm font-semibold text-white hover:bg-[#3C3489]">
                 Signup
               </Link>
             </>
@@ -179,7 +179,7 @@ export function TopBar() {
                 <Link href="/auth/login" className="rounded-lg border border-[#7F77DD] px-4 py-2 text-center text-sm font-medium text-white">
                   Login
                 </Link>
-                <Link href="/auth/login" className="rounded-lg bg-[#7F77DD] px-4 py-2 text-center text-sm font-semibold text-white hover:bg-[#3C3489]">
+                <Link href="/auth/signup" className="rounded-lg bg-[#7F77DD] px-4 py-2 text-center text-sm font-semibold text-white hover:bg-[#3C3489]">
                   Signup
                 </Link>
               </>
