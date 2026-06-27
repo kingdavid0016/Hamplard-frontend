@@ -107,10 +107,10 @@ export function TopBar() {
         <div className="ml-auto hidden items-center gap-2 lg:flex">
           {!isConnected ? (
             <>
-              <Link href="/auth/login" className="rounded-lg px-4 py-2 text-sm font-medium text-white hover:bg-[#3C3489]">
+              <Link href="/login" className="rounded-lg px-4 py-2 text-sm font-medium text-white hover:bg-[#3C3489]">
                 Login
               </Link>
-              <Link href="/auth/signup" className="rounded-lg bg-[#7F77DD] px-4 py-2 text-sm font-semibold text-white hover:bg-[#3C3489]">
+              <Link href="/signup" className="rounded-lg bg-[#7F77DD] px-4 py-2 text-sm font-semibold text-white hover:bg-[#3C3489]">
                 Signup
               </Link>
             </>
@@ -139,7 +139,7 @@ export function TopBar() {
               <UserCircle2 className="h-5 w-5" />
             </Link>
           ) : (
-            <Link href="/auth/login" className="rounded-lg bg-[#7F77DD] px-3 py-2 text-sm font-semibold text-white">
+            <Link href="/login" className="rounded-lg bg-[#7F77DD] px-3 py-2 text-sm font-semibold text-white">
               Login
             </Link>
           )}
@@ -176,10 +176,10 @@ export function TopBar() {
           <div className="mt-3 grid grid-cols-1 gap-2">
             {!isConnected ? (
               <>
-                <Link href="/auth/login" className="rounded-lg border border-[#7F77DD] px-4 py-2 text-center text-sm font-medium text-white">
+                <Link href="/login" className="rounded-lg border border-[#7F77DD] px-4 py-2 text-center text-sm font-medium text-white">
                   Login
                 </Link>
-                <Link href="/auth/signup" className="rounded-lg bg-[#7F77DD] px-4 py-2 text-center text-sm font-semibold text-white hover:bg-[#3C3489]">
+                <Link href="/signup" className="rounded-lg bg-[#7F77DD] px-4 py-2 text-center text-sm font-semibold text-white hover:bg-[#3C3489]">
                   Signup
                 </Link>
               </>

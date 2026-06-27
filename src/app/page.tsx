@@ -23,10 +23,10 @@ export default function HomePage() {
             Go from beginner to job-ready at your own pace.
           </p>
           <div className="flex items-center gap-3 flex-wrap">
-            <Link href="/auth/login" className="btn-primary text-base px-6 py-3">
+            <Link href="/login" className="btn-primary text-base px-6 py-3">
               Browse courses
             </Link>
-            <Link href="/auth/login?role=INSTRUCTOR" className="btn-secondary text-base px-6 py-3">
+            <Link href="/login?role=INSTRUCTOR" className="btn-secondary text-base px-6 py-3">
               Become an instructor
             </Link>
           </div>
